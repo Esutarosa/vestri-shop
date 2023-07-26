@@ -1,0 +1,95 @@
+/*=============== HEADER ===============*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
+}
+
+/*=============== NAV ===============*/
+.nav {
+   height: var(--header-height);
+
+    &__logo,
+    &__burger,
+    &__close {
+        color: var(--title-color);
+    }
+
+    &__data {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font: {
+            size: var(--h2-font-size);
+            weight: var(--font-semi-bold);
+        }
+
+        & span {
+           color: var(--text-color-ligth);
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        font-size: 1.25rem;
+    }
+
+    &__shop,
+    &__user,
+    &__burger,
+    &__close {
+        cursor: pointer;
+    }
+
+    &__toggle {
+        position: relative;
+        margin-right: 1.11rem;
+    }
+
+    &__burger,
+    &__close {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        inset: 0;
+        margin: auto;
+        transition: opacity .1s, transform .4s;
+    }
+
+    &__close {
+        opacity: 0;
+    }
+
+    @include for-small-desktop-up-alt {
+        &__menu {
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+            width: 100%;
+            height: calc(100vh - 3.5rem);
+            overflow: auto;
+            pointer-events: none;
+            opacity: 0;
+            transition: top .4s, opacity .3s;
+
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+        }
+
+        &__list {
+            background-color: var(--white-color);
+            padding-top: 1rem;
+        }
+    }
+}
