@@ -21,4 +21,12 @@ a {
 .container{
 	max-width: 1120px;
 	margin-inline: 1.5rem;
+
+	@include for-phone-only {
+		margin-inline: 1rem;
+	}
+
+	@include for-small-desktop-up {
+		margin-inline: auto;
+	}
 }
