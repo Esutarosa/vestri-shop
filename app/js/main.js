@@ -33,17 +33,14 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER HOME ===============*/
-const popularSwiper = new Swiper('.home__container', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    loop: true,
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+const homeSwiper = new Swiper(".home__swiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 
-    autoplay: {
-        delay: 2500,
-    }
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
