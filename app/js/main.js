@@ -31,3 +31,19 @@ const scrollHeader = () => {
                        : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*=============== SWIPER HOME ===============*/
+const popularSwiper = new Swiper('.home__container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+        delay: 2500,
+    }
+})

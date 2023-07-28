@@ -1,0 +1,19 @@
+/*=============== HOME ===============*/
+.home {
+    &__slider {
+        position: relative;
+        width: 100%;
+        height: 322px;
+    }
+}
+
+/*=============== BACKGROUND ===============*/
+.background {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    vertical-align: middle;
+}
