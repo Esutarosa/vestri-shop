@@ -6,10 +6,6 @@
     @media (min-width: 576px) { @content; }
 }
 
-@mixin for-tablet-portrait-up-extra {
-    @media (min-width: 700px) { @content; }
-}
-
 @mixin for-tablet-landscape-up {
     @media (min-width: 768px) { @content; }
 }
