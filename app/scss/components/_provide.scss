@@ -1,0 +1,113 @@
+/*=============== PROVIDE ===============*/
+.provide {
+    &__data {
+        text-align: center;
+    }
+
+    &__desc {
+        color: var(--text-color-light);
+    }
+
+    &__category {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 200px;
+        justify-content: center;
+        row-gap: 2.5rem;
+    }
+
+    &__img {
+        width: 3rem;
+        padding: .75rem;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+        background-color: var(--container-color);
+        transition: .4s;
+    }
+
+    &__group {
+        text-align: center;
+    }
+
+    &__group:hover &__img {
+        transform: translateY(-.25rem);
+    }
+
+    &__name {
+        color: var(--title-color);
+        font-size: var(--h3-font-size);
+        margin-bottom: .5rem;
+    }
+
+    &__text {
+        color: var(--text-color-light);
+    }
+
+    @include for-tablet-portrait-up {
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__category {
+            grid-template-columns: repeat(2, 200px);
+            column-gap: 3rem;
+        }
+
+        &__line {
+            position: relative;
+            margin-left: 1.75rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -1.5rem;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                width: 2px;
+                height: 80px;
+                background-color: var(--title-color);
+            }
+        }
+
+        &__desc {
+            width: 320px;
+            text-align: initial;
+        }
+    }
+
+    @include for-small-desktop-up {
+        &__category {
+            grid-template-columns: repeat(3, 250px);
+        }
+
+        &__group {
+            text-align: initial;
+        }
+
+        &__img {
+            width: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__desc {
+            width: 420px;
+        }
+    }
+
+    @include for-big-desktop-up {
+        &__category {
+            grid-template-columns: repeat(4, 260px);
+        }
+
+        &__desc {
+            width: initial;
+        }
+    }
+}

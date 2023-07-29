@@ -35,9 +35,9 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER HOME ===============*/
 const homeSwiper = new Swiper(".home__swiper", {
     effect: "fade",
-    
+
     autoplay: {
-        delay: 7500,
+        delay: 5000,
         disableOnInteraction: false,
     },
 
