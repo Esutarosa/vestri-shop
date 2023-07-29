@@ -53,3 +53,11 @@ const homeSwiper = new Swiper(".home__swiper", {
 
     loop: true,
 })
+
+/*=============== SWIPER FEATURED ===============*/
+const featuredSwiper = new Swiper(".featured__swiper", {
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+})

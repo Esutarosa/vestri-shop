@@ -1,0 +1,60 @@
+/*=============== FEATURED ===============*/
+.featured {
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        width: 220px;
+    }
+
+    &__card { 
+        margin: 0 .5rem;
+    }
+
+    &__img {
+        width: 220px;
+        height: 320px;
+        object-fit: cover;
+        margin-bottom: .5rem;
+        border-radius: .5rem;
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        color: var(--text-color);
+        margin-bottom: .75rem;
+    }
+
+    &__price {
+        font-size: var(--h2-font-size);
+        display: flex;
+
+        & span {
+            color: var(--text-color-light);
+            font-size: .85rem;
+            font-weight: var(--font-regular);
+            margin-left: .25rem;
+            text-decoration: line-through;
+        }
+    }
+
+    &__button {
+        font-size: 1.25rem;
+        color: var(--white-color);
+        background-color: var(--title-color);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
+    }
+}

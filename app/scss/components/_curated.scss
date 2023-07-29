@@ -41,6 +41,11 @@
         z-index: 2;
     }
 
+    &__button {
+        width: 180px;
+        justify-content: space-between;
+    }
+
     @include for-tablet-portrait-up {
         &__content {
             grid-template-columns: repeat(2, 220px);
@@ -71,7 +76,6 @@
 
         &__button {
             width: 220px;
-            justify-content: space-between;
         }
     }
 }
