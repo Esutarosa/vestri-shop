@@ -10,6 +10,7 @@
     --white-color: hsl(0, 0%, 100%);
     --container-color: hsl(214, 21%, 95%);
     --container-color-light: hsl(210, 20%, 98%);
+    --pagination-color: hsl(213, 15%, 74%);
 
     --body-font: 'Poppins', sans-serif;
 
@@ -23,9 +24,9 @@
     --smaller-font-size: .75rem;
 
     @media screen and (min-width: 1024px) {
-        --bigger-font-size: 4rem;
-        --big-font-size: 3.5rem;
-        --h1-font-size: 2.25rem;
+        --bigger-font-size: 4.5rem;
+        --big-font-size: 2rem;
+        --h1-font-size: 1.75rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;

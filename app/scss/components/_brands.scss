@@ -1,24 +1,22 @@
 /*=============== BRANDS ===============*/
 .brands {
     &__images {
-        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         justify-items: center;
 
         @include for-tablet-landscape-up {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(8, 1fr);
+            gap: 4rem;
         }
 
         @include for-small-desktop-up {
-            grid-template-columns: repeat(6, 1fr);
+            margin-top: 3rem;
         }
     }
 
     &__img {
-        width: 80px;
-    }
-
-    @include for-small-desktop-up {
-        padding: 3.5rem 0 1rem;
+        width: 60px;
     }
 }
