@@ -16,6 +16,10 @@
     &:hover {
         transform: translateY(-.25rem);
     }
+
+    @include for-big-desktop-up {
+        right: 3rem;
+    }
 }
 
 .show-scroll {

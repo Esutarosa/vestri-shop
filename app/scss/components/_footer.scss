@@ -44,6 +44,18 @@
     &__content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
+
+        @include for-phone-only {
+            gap: 1.5rem;
+        }
+
+        @include for-tablet-portrait-up {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include for-tablet-landscape-up {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     &__title {
@@ -75,5 +87,19 @@
         color: var(--text-color-light);
         padding-top: 2rem;
         border-top: 1px solid var(--text-color-light);
+    }
+
+    @include for-big-desktop-up {
+        padding-block: 5rem 2rem;
+
+        &__wrapper {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: space-between;
+        }
+
+        &__text,
+        &__link {
+            font-size: var(--normal-font-size);
+        }
     }
 }
