@@ -1,0 +1,65 @@
+/*=============== NEWSLETTER ===============*/
+.newsletter {
+    text-align: center;
+
+    &__title {
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: var(--text-color-light);
+        margin-bottom: 1.5rem;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        column-gap: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__input {
+        width: 70%;
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        color: var(--text-color);
+        background-color: var(--container-color);
+        border: 1px solid hsla(260, 15%, 92%, .3);
+
+        &::placeholder {
+            color: var(--text-color-light);
+        }
+
+        @include for-tablet-portrait-up {
+            width: 280px;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: .75rem;
+        border-radius: .5rem;
+        color: var(--white-color);
+        background-color: var(--title-color);
+    }
+
+    &__desc {
+        color: var(--text-color-light);
+        font-size: var(--small-font-size);
+
+        & a {
+            color: var(--title-color);
+            text-decoration: underline;
+        }
+    }
+
+    &-hidden {
+        display: none;
+
+        @include for-tablet-portrait-up {
+            display: block;
+        }
+    }
+}
