@@ -1,1 +1,79 @@
 /*=============== FOOTER ===============*/
+.footer {
+    padding-block: 3rem 2rem;
+    background-color: var(--container-color);
+
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__logo {
+        font: {
+            size: var(--h1-font-size);
+            weight: var(--font-semi-bold);
+        }
+
+        & span {
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        color: var(--title-color);
+    }
+
+    &__text,
+    &__link {
+        font-size: var(--small-font-size);
+
+        & i {
+            font-size: 1.25rem;
+        }
+
+        cursor: pointer;
+    }
+
+    &__text {
+        margin-top: 1rem;
+        color: var(--text-color-light);
+    }
+
+    &__content,
+    &__links {
+        display: grid;
+    }
+
+    &__content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: .75rem;
+    }
+
+    &__links {
+        row-gap: .5rem;
+    }
+
+    &__link {
+        color: var(--text-color-light);
+        transition: color .3s;
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+
+    &__payment {
+        display: flex;
+        column-gap: 1.25rem;
+    }
+
+    &__copy {
+        text-align: center;
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+        padding-top: 2rem;
+        border-top: 1px solid var(--text-color-light);
+    }
+}
